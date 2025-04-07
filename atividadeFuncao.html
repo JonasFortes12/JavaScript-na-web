@@ -24,7 +24,60 @@
             os números  'n1' e 'n2'.
             Chame a função para cada tipo de operação.
         */
+        
+        // const calculadora = function (n1, n2, operacao) {
+
+        //     switch (operacao) {
+
+        //         case "+":
+        //             return n1 + n2
+        //             break;
+                
+        //         case "-":
+        //             return n1 - n2
+        //             break;
+                
+        //         case "/":
+        //             return n1/n2
+        //             break;
+                
+        //         case "*":
+        //             return n1*n2
+        //             break
+                
+        //         default:
+        //             return "Operação Inválida!"
+
+        //     }
+
+        // }
  
+
+        // alert(calculadora(2, 2, "+"))
+
+        // alert(calculadora(10, 0, "/"))
+
+
+        /*
+            3.1 -  Faça uma Function Expression (Função Expressão) 
+            que receba a temperatura em graus Fahrenheit, 
+            transforme e retorne a temperatura em graus Celsius.
+            Fórmula: C = 5/9 x (F – 32)
+        */
+
+        const converterFparaC = function (fahrenheit){
+
+            const grausC = (5/9) * (fahrenheit-32)
+
+            return grausC.toFixed(2)
+        }
+
+        alert(converterFparaC(60))
+
+
+        // Pegar valores do usuário:
+        const opcao = prompt("Digite uma opção: ")
+        alert(opcao)
 
     </script>
 
