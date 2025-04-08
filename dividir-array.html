@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dividir lista em duas partes</title>
+</head>
+<body>
+    <script>
+       
+       const listaEstudantes = [
+        'João', 'Juliana', 'Ana', 'Caio',
+        'Lara', 'Marjori', 'Guilherme',
+        'Aline', 'Fabiana', 'André', 'Carlos',
+        'Paulo', 'Bia', 'Vivian', 'Isabele',
+        'Vinicius', 'Renan', 'Renata', 'Daisy',
+        'Camilo'
+       ]
+
+       /*
+        Divida os estudantes em duas partes iguais,
+        primeira parte na variável sala01 e
+        a segunda parte na variável sala02
+        dica: Use listaEstudantes.length 
+        e método slice()
+       */
+       const sala01 = listaEstudantes.slice(0, listaEstudantes.length/2)
+       const sala02 = listaEstudantes.slice(listaEstudantes.length/2)
+
+       alert("sala01: " + sala01 )
+       alert("sala02: " + sala02 )
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

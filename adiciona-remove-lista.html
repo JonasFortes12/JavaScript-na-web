@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiciona/Remove elemento de arrays</title>
+</head>
+<body>
+    <script>
+                //      0   1   2   3
+        const notas = [10, 6.5, 8, 7.5]
+
+        alert("Notas: " + notas)
+
+        // adiciona um elemento no final da lista
+        notas.push(10, 7, 4) 
+
+        alert("Notas Atualizadas: " + notas)
+
+        //remove elemento no final da lista
+        notas.pop() 
+
+        alert("Notas após remoção: " + notas)
+
+        const valor = prompt("Digite o valor: ")
+
+        /*
+          Pedir ao usuário 4 número
+          
+          Adicionar os números a uma lista com o
+          método push
+          
+          Mostrar na Tela todos os elementos da lista 
+          e sua quantidade
+        */
+
+        const nota01 = parseFloat(prompt("Digite nota 01: "))
+        const nota02 = parseFloat(prompt("Digite nota 02: "))
+        const nota03 = parseFloat(prompt("Digite nota 03: "))
+        const nota04 = parseFloat(prompt("Digite nota 04: "))
+
+        const listaNotas = []
+
+        listaNotas.push(nota01, nota02, nota03, nota04)
+
+        alert("Notas: " + listaNotas)
+
+
+
+    </script>
+
+</body>
+</html>

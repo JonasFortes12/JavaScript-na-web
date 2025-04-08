@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays de Arrays</title>
+</head>
+<body>
+    <script>
+        
+        const alunos = [
+            "joão", "Juliana", "Caio", "Ana"
+        ]
+        const medias = [10, 8, 7.5, 9]
+
+                        ///    0       1
+        const alunosMedia = [alunos, medias]
+
+        alert(
+            "Aluno(a):" + alunosMedia[0][2] 
+            + "\n Medias: " + alunosMedia[1][2]
+        )
+
+
+    </script>
+
+</body>
+</html>
