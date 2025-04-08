@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurar em Listas</title>
+</head>
+<body>
+    <script>
+        
+        //const pets = ["Cachorro", "Gato", "Hamster" ]
+
+        //alert(pets.includes("Gato"))
+        // true ou false
+
+        //alert(pets.indexOf("Gato"))  
+        // -> 1
+
+        const alunos = [
+            "joão", "Juliana", "Caio", "Ana"
+        ]
+        const medias = [10, 8, 7.5, 9]
+
+        const alunosMedia = [alunos, medias]
+
+        /*
+            Criar uma função chamada 'ExibeNomeENota'
+            que recebe como parâmetro o nome do estudande
+            e verifique se o estudante está na lista 
+            'alunosMedia', se estiver retorne nome e a media
+            do estudante, se não estiver, retorne 
+            'Estudante não existe'
+        */
+
+        const ExibeNomeENota = function (aluno) {
+            if(alunosMedia[0].includes(aluno)){
+                // Retornar o nome e media do estudande
+                const indexAluno = alunosMedia[0].indexOf(aluno)
+                const nomeAluno = alunosMedia[0][indexAluno]
+                const mediaAluno = alunosMedia[1][indexAluno]
+
+                return ` Aluno: ${nomeAluno} | Media: ${mediaAluno}`
+                
+            }else{
+                return `Estudande não existe!`
+            }
+        }
+
+
+        alert(  ExibeNomeENota("Jonas")  )
+
+        alert(  ExibeNomeENota("Caio")  )
+
+
+    </script>
+
+</body>
+</html>
