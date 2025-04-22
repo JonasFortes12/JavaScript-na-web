@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+<body>
+    <script>
+        
+        const numeros = []
+
+        for(let i = 1; i<=10; i++){
+            const num = prompt(`Digite o número ${i}`)
+            numeros.push(num)
+        }
+
+        const mostraNumNegativo = (numero) => {
+            if(numero<0) {
+                alert(numero)
+            } 
+        }
+
+        numeros.forEach(mostraNumNegativo)
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Map</title>
+</head>
+<body>
+    <script>
+
+        // const numeros = [65, 44, 12, 4]
+
+        // function multiplicaPorDez(numero){
+        //     return numero * 10
+        // }
+
+        // const numerosAtualizados = numeros.map(multiplicaPorDez)
+
+        // alert(numerosAtualizados)
+
+
+        
+        /*Façam uma função que receba um nome e retorne 
+        esse nome em maiúsculo. E dê  essa função para o
+        map() para ele retornar uma lista com todos os
+        nome em maipusculo*/
+        
+        const nomes = ["Jonas", "João", "Pedro", "Marcos"]
+        
+        const tornaMaiusculo = (nome) => {
+            return nome.toUpperCase()
+        }
+
+        const nomesAtualizados = nomes.map(tornaMaiusculo)
+
+        alert(nomesAtualizados)
+
+    </script>
+</body>
+</html>
