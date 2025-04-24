@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText - innerHTML - textContent</title>
+</head>
+<body>
+    <p id="demo">Olá</p>
+
+    <div class="container">
+        
+    </div>
+
+    <script>
+        const paragrafo = document.getElementById("demo")
+        const container = document.querySelector(".container")
+        paragrafo.innerText = "Texto via innerText"
+
+        paragrafo.innerHTML = "<strong>Texto via innerHtml</strong>"
+
+        container.innerHTML = "<h1>Olá mundo !</h1>"
+
+
+    </script>
+
+
+</body>
+</html>

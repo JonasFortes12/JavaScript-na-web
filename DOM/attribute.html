@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get e Set Attribute</title>
+</head>
+<body>
+    
+    <img src="https://static.wixstatic.com/media/1f6151_2a339dcfb14e413b983309b935357b8c~mv2.png/v1/fill/w_568,h_410,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1f6151_2a339dcfb14e413b983309b935357b8c~mv2.png" alt="">
+
+    <div  ></div>
+
+    <script>
+        const img = document.querySelector("img")
+
+        img.setAttribute("src", "https://cdn.pixabay.com/photo/2016/09/08/13/58/desert-1654439_640.jpg")
+        const valorAtributo = img.getAttribute("src")
+        alert(valorAtributo)
+
+    </script>
+
+</body>
+</html>
