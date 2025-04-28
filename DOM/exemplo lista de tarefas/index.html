@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
+    
+    <style>
+
+        .hidden {
+            display: none;
+        }
+
+    </style>
+
+
 </head>
 <body>
     
@@ -12,6 +22,11 @@
 
     <section class="container">
 
+        <div class="filter-container">
+            <input type="text" 
+            id="filterInput" 
+            placeholder="Filtrar tarefas...">
+        </div>
 
         <ul id="taskList">
         </ul>
